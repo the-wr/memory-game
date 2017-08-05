@@ -1,2 +1,4 @@
-# memory-game
-Simple memory game
+# Memory game
+Simple memory game. Written in two hours (not including the asset search :))
+
+![Screenshot](Screenshot.png?raw=true)
