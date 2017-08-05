@@ -1,0 +1,26 @@
+﻿<Window x:Class="MemoryGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="760"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Margin="10">
+            <TextBlock FontSize="24">Memory game</TextBlock>
+            <DockPanel Margin="0,20,0,0">
+                <TextBlock Name="tbBoardSizeText" FontSize="20" DockPanel.Dock="Right" HorizontalAlignment="Center">2x2</TextBlock>
+                <TextBlock VerticalAlignment="Center">Board size:</TextBlock>
+            </DockPanel>
+            <Slider Name="slBoardSize" Margin="0,5,0,0" Minimum="1" Maximum="5" IsSnapToTickEnabled="True"></Slider>
+            <Button Name="btnNewGame" Height="40" Margin="0,20,0,0">Start new game</Button>
+            
+            <Rectangle Margin="20,40" Height="1" Fill="Black" Opacity="0.3"></Rectangle>
+            
+            <TextBlock Name="tbTimer" HorizontalAlignment="Center" FontSize="24">00:00</TextBlock>
+            <TextBlock Name="tbVictory" FontSize="24" Width="120" TextWrapping="Wrap" TextAlignment="Center" Margin="0,20,0,0" Foreground="DarkOrange" Visibility="Hidden">A glorious victory! ;)</TextBlock>
+        </StackPanel>
+        <Grid Name="gridBoard" Margin="10"></Grid>
+    </DockPanel>
+</Window>
